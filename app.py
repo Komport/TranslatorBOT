@@ -1,12 +1,12 @@
 from telebot import TeleBot as tb # Telegram API
-import bot_config
+import bot_config #Config
 from googletrans import Translator #GooGle Translate lib
 
 
 bot = tb(bot_config.token) #  API token
-translator = Translator()
+translator = Translator() # Translator
 
-class Bthelper:
+class Bthelper: #Helper Class 
     def __init__(self):
         self.handler = 'en'
 
@@ -55,7 +55,7 @@ def message_translate(message):
     else:
         bot.send_message(message.from_user.id,'Bot-dan istifade etmek huququnuz yoxdur.') #bot_config faylinda known_users listine elave edilmelidir
 
-def do_trans(message):
+def do_trans(message): #Translator Function
     try:
         handler = bt_help.get_handler()
         translated = translator.translate(message.text,handler)
