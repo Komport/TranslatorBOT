@@ -1,2 +1,2 @@
-token = '467176261:AAFHlUUdsKcOo9TQUg2oAACDDBeQiuPG-Kc'
+token = 'Sizin token burada olmalidir'
 known_users=['YusifYusifli']
